@@ -30,5 +30,11 @@ describe("Application", () => {
     // getByLabelText
     const nameElement2 = screen.getByLabelText("Name", { selector: "input" });
     expect(nameElement2).toBeInTheDocument();
+
+    //getByPlaceholderText
+    const nameElement3=screen.getByPlaceholderText("FullName");
+    expect(nameElement3).toBeInTheDocument();
+
+
   });
 });

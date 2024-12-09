@@ -9,6 +9,7 @@ const Application = () => {
           <input
             type="text"
             id="name"
+            placeholder="FullName"
           />
         </div>
         <div>
