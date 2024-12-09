@@ -4,6 +4,8 @@ const Application = () => {
     <h1>Job application form</h1>
     <h2>Section 1</h2>
     <p>All Fields Are Mandatory</p>
+    <span title='close'>X</span>
+    <div data-testid="customHtml">Custom HTMLElement</div>
     <img src="https://via.placeholder.com/150" alt="a person with laptop" />
       <form>
         <div>

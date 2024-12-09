@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Application from "./Application";
+import { clearScreenDown } from "readline";
 
 describe("Application", () => {
   test("renders correctly", () => {
@@ -42,10 +43,19 @@ describe("Application", () => {
     //getByDisplayValue
     const nameElement4=screen.getByDisplayValue("Shrish");
     expect(nameElement4).toBeInTheDocument();
-    
+
     //getByAltText
     const imageElement = screen.getByAltText("a person with laptop");
     expect(imageElement).toBeInTheDocument();
+
+    //getByTitle
+    const closeElement=screen.getByTitle("close");
+    expect(closeElement).toBeInTheDocument();
+
+    //getByTestId
+    const customElement = screen.getByTestId("customHtml");
+    expect(customElement).toBeInTheDocument();
   });
+
 });
 
