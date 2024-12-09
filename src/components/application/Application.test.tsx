@@ -35,6 +35,10 @@ describe("Application", () => {
     const nameElement3=screen.getByPlaceholderText("FullName");
     expect(nameElement3).toBeInTheDocument();
 
+    //getByText
+    const paragraphElement=screen.getByText("All Fields Are Mandatory");
+    expect(paragraphElement).toBeInTheDocument();
+
 
   });
 });
