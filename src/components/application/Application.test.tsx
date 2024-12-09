@@ -42,5 +42,10 @@ describe("Application", () => {
     //getByDisplayValue
     const nameElement4=screen.getByDisplayValue("Shrish");
     expect(nameElement4).toBeInTheDocument();
+    
+    //getByAltText
+    const imageElement = screen.getByAltText("a person with laptop");
+    expect(imageElement).toBeInTheDocument();
   });
 });
+
