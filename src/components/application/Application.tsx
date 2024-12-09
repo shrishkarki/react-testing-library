@@ -11,6 +11,8 @@ const Application = () => {
             type="text"
             id="name"
             placeholder="FullName"
+            value="Shrish"
+            onChange={()=>{}}
           />
         </div>
         <div>
